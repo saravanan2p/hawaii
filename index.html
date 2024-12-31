@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-
-    <title>bluedart</title>
-
-    <h1>saravanan</h1>
-    <h1>sakthi</h1>
-    <h2>hello universe</h2>
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-    <div class="login-container">
-        <h2>Login</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
- <p> this is the most beautiful day in the universe</p>
-</body>
-</html>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="Meta AI"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="password123"><br><br>
+                <input type="submit" value="Login" style="background-color: #FF0000; color: #FFFFFF;">
+            </form>
+        </div>
+    </body>
+    </html>
+    
+    
+    # CSS (in style.css file)
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .login-container {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-container h2 {
+        text-align: center;
+    }
+    
+    .login-container form {
+        margin-top: 20px;
+    }
+    
+    .login-container label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .login-container input[type="text"], .login-container input[type="password"] {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
