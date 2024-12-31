@@ -1,60 +1,98 @@
+Here is a simple login page code in HTML and CSS that you can use in Visual Studio:
+
+# HTML
+
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="login-container">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="Meta AI"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" value="password123"><br><br>
-                <input type="submit" value="Login" style="background-color: #FF0000; color: #FFFFFF;">
-            </form>
-        </div>
-    </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
+
+# CSS (in style.css file)
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+This code creates a simple login page with a form containing fields for username and password, and a submit button. The CSS adds basic styling to make the page look more presentable.
+
+To use this code in Visual Studio:
+
+1. Create a new HTML file (e.g., login.html) and paste the HTML code into it.
+2. Create a new CSS file (e.g., style.css) and paste the CSS code into it.
+3. Make sure the CSS file is linked to the HTML file by adding the <link> tag in the HTML file's <head> section.
+4. Open the HTML file in a web browser to see the login page in action.
+
+Note that this is just a basic example, and you should add proper validation, authentication, and security measures to your login page in a real-world application.
+
+
     
     
-    # CSS (in style.css file)
+   
     
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-    }
     
-    .login-container {
-        width: 300px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .login-container h2 {
-        text-align: center;
-    }
-    
-    .login-container form {
-        margin-top: 20px;
-    }
-    
-    .login-container label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .login-container input[type="text"], .login-container input[type="password"] {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
